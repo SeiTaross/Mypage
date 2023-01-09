@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html labg="ja">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>My Page</title>
-    </head>
-    <body>
-        <header style="display: flex; width: 100%; height: 50px; background-color: aquamarine; align-items: center;">
-          <h2 class="title" style="margin-right: auto;">Welcome to MyPage</h2>
-          <nav>
-            <ul class="menu-group">
-              <li style="list-style: none; display: inline-block; padding: 10px;"><a href="#home">Home</a></li>
-              <li style="list-style: none; display: inline-block; padding: 10px;"><a href="#about">About</a></li>
-              <li style="list-style: none; display: inline-block; padding: 10px;"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-        
-        <div id="home" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="pictures/pic1.JPG" class="d-block w-100" alt="海">
-            </div>
-            <div class="carousel-item">
-              <img src="pictures/pic2.JPG" class="d-block w-100" alt="山">
-            </div>
-            <div class="carousel-item">
-              <img src="pictures/pic3.jpg" class="d-block w-100" alt="草原">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div class="alert alert-info" role="alert">
-          <h2 id="about"class="heading" style="text-align: center; margin: 20px;">About</h2>
-        </div>
-        <div class="continer" style="display: flex; justify-content: center; align-items: center;">
-          <div class="content">
-            <img src="pictures/pic_me.JPG" class="image" style="border-radius: 50%; width: 180px; height: 180px; margin: 10px;">
-            <h3>プロフィール</h3>
-            <p>
-              名前：　稲垣正太郎（いながきせいたろう）<br>
-              生年月日：　1999/5/7 <br>
-              出身：　愛知県岡崎市 <br>
-              趣味：　ゲーム・音楽・運動・アウトドア <br>
-            </p>
-            <p>
-              Unityを用いてHMDに関する研究を行っています。<br>
-              ↓卒業研究で作成したもののサンプルです。
-            </p>
-            <video controls width="300" heigh="200" src="movie.mp4"></video>
-            <h3 style="margin: 10px;">学歴</h3>
-            <p>
-              2018年3月　刈谷高等学校　卒業 <br>
-              2022年3月　名古屋工業大学　工学部　情報工学科　卒業 <br>
-              2024年3月　名古屋工業大学大学院　工学研究科　情報工学専攻　卒業予定 <br>
-            </p>
-            <h3 style="margin: 10px;">学会発表歴</h3>
-            <p>
-              NICOGRAPH International 2022 Poster<span class="badge text-bg-warning" style="background-color: yellow;">受賞</span><br>
-              "Facilitating Rearward Visibility by Controlling Eye Direction in HMD Viewing of Panoramic Images" <br>
-              Seitaro Inagaki, Kenji Funahashi <br>
-            </p>
-            <p>
-              SIGGRAPH 2022 Poster<br>
-              "Easy rearward visibility by the control of eye direction in viewing panoramic images with HMD"<br>
-              Seitaro Inagaki, Kenji Funahashi <br>
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="alert alert-info" role="alert">
-            <h2 id="contact" style="text-align: center; margin: 20px;">Contact</h2>
-          </div>
-          <h3 style="text-align: center; margin: 20px;">
-            名古屋工業大学　20号館 <br>
-            舟橋研究室 <br>
-            s.inagaki.706@stn.nitech.ac.jp
-          </h3>
-          <div id="map" style="height: 500px; width: 100%;"></div>
-          <script>
-            var map = L.map('map').setView([35.158, 136.924], 17);
-            var Nitech = L.marker([35.15744247614915, 136.9266888820095]).addTo(map).bindPopup('名古屋工業大学20号館').openPopup();
-            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-          </script>
-        </div>
-    </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
+
+  <title>My Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h2>Seitaro Inagaki's MyPage</h2>
+
+      <input id="drawer_input" class="drawer_hidden" type="checkbox">
+    
+      <!-- ハンバーガーアイコン -->
+      <label for="drawer_input" class="drawer_open"><span></span></label>
+
+      <nav class="nav_content">
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#home">Home</a></li>
+          <li class="nav_item"><a href="#about">About</a></li>
+          <li class="nav_item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="home" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="pictures/pic1.JPG" class="d-block w-100" alt="海">
+      </div>
+      <div class="carousel-item">
+        <img src="pictures/pic2.JPG" class="d-block w-100" alt="山">
+      </div>
+      <div class="carousel-item">
+        <img src="pictures/pic3.jpg" class="d-block w-100" alt="草原">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="alert alert-info" role="alert">
+    <h2 id="about" class="heading" style="text-align: center; margin: 20px;">About</h2>
+  </div>
+  <div class="continer" style="display: flex; justify-content: center; align-items: center;">
+    <div class="content">
+      <img src="pictures/pic_me.JPG" class="image"
+        style="border-radius: 50%; width: 180px; height: 180px; margin: 10px;">
+      <h3>プロフィール</h3>
+      <p>
+        名前：　稲垣正太郎（いながきせいたろう）<br>
+        生年月日：　1999/5/7 <br>
+        出身：　愛知県岡崎市 <br>
+        趣味：　ゲーム・音楽・運動・アウトドア <br>
+      </p>
+      <p>
+        Unityを用いてHMDに関する研究を行っています。<br>
+        ↓卒業研究で作成したもののサンプルです。
+      </p>
+      <video controls width="300" heigh="200" src="movie.mp4"></video>
+      <h3 style="margin: 10px;">学歴</h3>
+      <p>
+        2018年3月　刈谷高等学校　卒業 <br>
+        2022年3月　名古屋工業大学　工学部　情報工学科　卒業 <br>
+        2024年3月　名古屋工業大学大学院　工学研究科　情報工学専攻　卒業予定 <br>
+      </p>
+      <h3 style="margin: 10px;">学会発表歴</h3>
+      <p>
+        NICOGRAPH International 2022 Poster<span class="badge text-bg-warning"
+          style="background-color: yellow;">受賞</span><br>
+        "Facilitating Rearward Visibility by Controlling Eye Direction in HMD Viewing of Panoramic Images" <br>
+        Seitaro Inagaki, Kenji Funahashi <br>
+      </p>
+      <p>
+        SIGGRAPH 2022 Poster<br>
+        "Easy rearward visibility by the control of eye direction in viewing panoramic images with HMD"<br>
+        Seitaro Inagaki, Kenji Funahashi <br>
+      </p>
+    </div>
+  </div>
+  <div>
+    <div class="alert alert-info" role="alert">
+      <h2 id="contact" style="text-align: center; margin: 20px;">Contact</h2>
+    </div>
+    <h3 style="text-align: center; margin: 20px;">
+      名古屋工業大学　20号館 <br>
+      舟橋研究室 <br>
+      s.inagaki.706@stn.nitech.ac.jp
+    </h3>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+    <script>
+      var map = L.map('map').setView([35.158, 136.924], 17);
+      var Nitech = L.marker([35.15744247614915, 136.9266888820095]).addTo(map).bindPopup('名古屋工業大学20号館').openPopup();
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    </script>
+  </div>
+</body>
+
 </html>
