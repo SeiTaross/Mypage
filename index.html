@@ -33,7 +33,7 @@
       <nav class="nav_content">
         <ul class="nav_list">
           <li class="nav_item"><a href="#home">Home</a></li>
-          <li class="nav_item"><a href="#profile">Profile</a></li>
+          <li class="nav_item"><a href="#about">About</a></li>
           <li class="nav_item"><a href="#study">Study</a></li>
           <li class="nav_item"><a href="#contact">Contact</a></li>
         </ul>
@@ -41,23 +41,24 @@
     </div>
   </header>
 
+  <div class="content" id="home">
+    <div class="home">
+      
+    </div>
+  </div>
 
-  <div class="content" id="profile">
-    <h2 class="title">Profile</h2>
+  <div class="content" id="about">
+    <h2 class="title">About</h2>
     <div class="profile">
       <img src="./pictures/pic_me.JPG" class="profile_picture">
+      <h3>プロフィール</h3>
       <p>
         名前：　稲垣正太郎（いながきせいたろう）<br>
         生年月日：　1999/5/7 <br>
         出身：　愛知県岡崎市 <br>
         趣味：　ゲーム・音楽・運動・アウトドア <br>
       </p>
-      <p>
-        Unityを用いてHMDに関する研究を行っています。<br>
-        ↓卒業研究で作成したもののサンプルです。
-      </p>
-      <video controls width="300" heigh="200" src="movie.mp4"></video>
-      <h3 style="margin: 10px;">学歴</h3>
+      <h3>学歴</h3>
       <p>
         2018年3月　刈谷高等学校　卒業 <br>
         2022年3月　名古屋工業大学　工学部　情報工学科　卒業 <br>
@@ -69,7 +70,12 @@
   <div class="content" id="study">
     <h2 class="title">Study</h2>
     <div class="study">
-      <h3 style="margin: 10px;">学会発表歴</h3>
+      <p>
+        Unityを用いてHMDに関する研究を行っています。<br>
+        ↓卒業研究で作成したもののサンプルです。
+      </p>
+      <video controls width="300" heigh="200" src="movie.mp4"></video>
+      <h3>学会発表歴</h3>
       <p>
         NICOGRAPH International 2022 Poster<span class="badge text-bg-warning"
           style="background-color: yellow;">受賞</span><br>
@@ -87,11 +93,11 @@
   <div class="content" id="contact">
     <h2 class="title">Contact</h2>
     <div class="contact">
-      <h3 style="text-align: center; margin: 20px;">
+      <h4>
         名古屋工業大学　20号館 <br>
         舟橋研究室 <br>
         s.inagaki.706@stn.nitech.ac.jp
-      </h3>
+      </h4>
       <div id="map" style="height: 500px; width: 100%;"></div>
       <script>
         var map = L.map('map').setView([35.158, 136.924], 17);
