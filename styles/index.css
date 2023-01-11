@@ -12,10 +12,12 @@
 
 .top h1 {
     position: absolute;
+    text-align: center;
     color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 200%;
 }
 
 .content {
