@@ -1,12 +1,13 @@
 .top {
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
 }
 
 .top img{
     width: 100%;
-    height: auto;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .top h1 {
