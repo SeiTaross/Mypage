@@ -4,7 +4,8 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
@@ -104,14 +105,14 @@
         舟橋研究室 <br>
         s.inagaki.706@stn.nitech.ac.jp
       </h4>
-      <div id="map" style="height: 500px; width: 100%;"></div>
-      <script>
-        var map = L.map('map').setView([35.158, 136.924], 17);
-        var Nitech = L.marker([35.15744247614915, 136.9266888820095]).addTo(map).bindPopup('名古屋工業大学20号館').openPopup();
-        L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-      </script>
     </div>
   </div>
+
+  <footer>
+    <div class="footer">
+      <p>©️2023 Seitaro Inagaki</p>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
