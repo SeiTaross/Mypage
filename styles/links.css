@@ -1,4 +1,17 @@
+.links a {
+    margin: 10px;
+}
+
 .links a:hover {
     color: black;
+}
+
+.links img {
+    width: 70px;
+    height: 70px;
+}
+
+.links img:hover {
+    filter: invert();
 }
 
