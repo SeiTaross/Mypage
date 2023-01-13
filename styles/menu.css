@@ -71,11 +71,13 @@
   .nav_content h3 {
     color: white;
     padding-top: 20px;
+    margin-bottom: 30px;
   }
   
   /* メニュー黒ポチを消す */
-  .nav_list {
+  .nav_list li {
     list-style: none;
+    margin-bottom: 20px;
   }
   
   /* アイコンがクリックされたらメニューを表示 */
