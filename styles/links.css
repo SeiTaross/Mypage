@@ -1,9 +1,13 @@
 .links a {
-    margin: 10px;
+    margin: auto 10px;
 }
 
 .links a:hover {
     color: black;
+}
+
+.links i {
+    margin-top: 20px;
 }
 
 .links img {

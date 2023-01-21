@@ -51,12 +51,40 @@ header {
 }
 
 .content p {
-    margin: 20px;
+    width: 80%;
+    margin: 20px auto;
     font-size: 15px;
 }
 
 .new {
     color: red;
+}
+
+.badge {
+    display: inline-block;
+    color: #fff;
+    padding: 0.2rem 0.3rem;
+    margin: 20px auto;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.language {
+    background-color: #3998DB;
+}
+
+.frame {
+    background-color: #E74C3C;
+}
+
+.skill {
+    background-color: #F29C33;
+}
+
+.skills p {
+    margin: auto;
 }
 
 .title{
