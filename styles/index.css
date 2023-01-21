@@ -62,7 +62,6 @@ header {
 
 .badge {
     display: inline-block;
-    color: #fff;
     padding: 0.2rem 0.3rem;
     margin: 20px auto;
     border-radius: 1rem;
@@ -72,15 +71,23 @@ header {
 }
 
 .language {
+    color: #fff;
     background-color: #3998DB;
 }
 
 .frame {
+    color: #fff;
     background-color: #E74C3C;
 }
 
 .skill {
+    color: #fff;
     background-color: #F29C33;
+}
+
+.pickup {
+    margin-top: 0;
+    background-color: yellow;
 }
 
 .skills p {
