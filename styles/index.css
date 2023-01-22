@@ -44,6 +44,13 @@ header {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 767px){
+    .main_inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 .content {
     justify-content: center; 
     text-align: center;
