@@ -39,6 +39,11 @@ header {
     font-family: serif;
 }
 
+.main_inner {
+    width: 1080px;
+    margin: 0 auto;
+}
+
 .content {
     justify-content: center; 
     text-align: center;
@@ -47,13 +52,23 @@ header {
 
 .content h4 {
     margin: 20px auto;
-    font: bold;
+    font-weight: bold;
 }
 
 .content p {
-    width: 80%;
+    max-width: 780px;
     margin: 20px auto;
     font-size: 15px;
+}
+
+.textBox {
+    text-align: center;
+}
+
+.textBox p {
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
 }
 
 .new {
@@ -98,6 +113,8 @@ header {
     text-align: center;
     color: rgba(54, 78, 148, 0.8);
     padding-top: 20px;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
     border-top: solid 3px rgba(54, 78, 148, 0.5);
     border-bottom: solid 3px rgba(54, 78, 148, 0.5);
 }

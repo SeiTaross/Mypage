@@ -47,156 +47,182 @@
     </div>
   </header>
 
-  <div class="top" id="top">
-    <img src="./pictures/pic3.jpg">
-    <h1>
-      Welcome to <br>
-      Seitaro Inagaki's Mypage
-    </h1>
-  </div>
-
-  <div class="content">
-    <div class="news">
-      <h2>
-        What's new
-        <p>お知らせ</p>
-      </h2>
+  <main>
+    <div class="top" id="top">
+      <img src="./pictures/pic3.jpg">
+      <h1>
+        Welcome to <br>
+        Seitaro Inagaki's Mypage
+      </h1>
     </div>
-  </div>
 
-  <div class="content" id="about">
-    <h2 class="title">
-      About
-      <p>自己紹介</p>
-    </h2>
-    <div class="profile">
-      <img src="./pictures/pic_me.JPG" class="profile_picture">
-      <h4>プロフィール</h4>
-      <p>
-        名前：　稲垣正太郎（いながきせいたろう）<br>
-        生年月日：　1999/5/7 <br>
-        出身：　愛知県岡崎市 <br>
-        趣味：　ゲーム・音楽・運動・アウトドア <br>
-      </p>
-      <h4>学歴</h4>
-      <p>
-        2018年3月　刈谷高等学校　卒業 <br>
-        2022年3月　名古屋工業大学　工学部　情報工学科　卒業 <br>
-        2024年3月　名古屋工業大学大学院　工学研究科　情報工学専攻　卒業予定 <br>
-      </p>
-      <h4>スキル</h4>
-      <div class="skills">
-        <p>そこそこ使える</p>
-        <span class="badge language">C++</span>
-        <span class="badge skill">Spresense</span>
-        <span class="badge language">Python</span>
-        <span class="badge frame">Unity</span>
-        <span class="badge language">C#</span>
-        <span class="badge language">HTML</span>
-        <span class="badge language">CSS</span>
-        <span class="badge skill">Git</span>
-        <p>触ったことがある</p>
-        <span class="badge language">C</span>
-        <span class="badge skill">GCP</span>
-        <span class="badge language">JavaScript</span>
-        <span class="badge language">Java</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="content" id="study">
-    <h2 class="title">
-      Study
-      <p>研究紹介</p>
-    </h2>
-    <div class="study">
-      <h4>テーマ</h4>
-      <p>『パノラマ360度画像のHMD視聴時における視線方向制御による後方視認の容易化』</p>
-      <h4>概要</h4>
-      <p>
-        この研究は座った状態でのHMD使用における後方データの使用率が低く、データの無駄が生じやすい問題に焦点を当てています。
-        これは座った状態において後ろを振り向くためには体全体を使う必要があり、後方視認が億劫であることが根底にあります。
-        そこで、プログラムで視線方向(顔の向いている方向）の角度を変化させることで、首の回旋動作だけで容易に後方が視認できる手法を提案し、その有用性について調査しています。
-      </p>
-      <p>↓卒業研究で作成した実験システムの様子です。</p>
-      <video controls width="300" heigh="200" src="./videos/video.mp4"></video>
-      <h4>実績</h4>
-      <p>
-        2022年6月  <a class="url" href="https://www.art-science.org/nicograph/nicoint2022/" target="_blank">NICOGRAPH International 2022</a> Poster部門<br>
-        "<a class="url" href="https://ieeexplore.ieee.org/document/9848477" target="_blank">Facilitating Rearward Visibility by Controlling Eye Direction in HMD Viewing of Panoramic Images</a>" <br>
-        Seitaro Inagaki, Kenji Funahashi <br>
-        <a class="url" href="https://www.art-science.org/nicograph/nicoint2022/index.html#nicoint2022-award" target="_blank">
-          <span class="badge pickup">BestPosterPresentationAward受賞</span>
-        </a>
-      </p>
-      <p>
-        2022年8月  <a class="url" href="https://s2022.siggraph.org/" target="_blank">SIGGRAPH 2022</a> Poster部門<br>
-        "<a class="url" href="https://dl.acm.org/doi/10.1145/3532719.3543210" target="_blank">Easy rearward visibility by the control of eye direction in viewing panoramic images with HMD</a>" <br>
-        Seitaro Inagaki, Kenji Funahashi <br>
-      </p>
-    </div>
-  </div>
-
-  <div class="content" id="products">
-    <h2 class="title">
-      Products
-      <p>制作物紹介</p>
-    </h2>
-    <div class="products">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">
-            みまもセル
-            <p>〜ランドセル取り付け型地域安全見守りサービス〜</p>
-          </h5>
-          <p class="card-text">
-            Sony主催のSensingSolutionハッカソン2022で作成した子供見守りサービスです。
-            ランドセル取り付け型IoTデバイス、管理者用Webアプリ、保護者向けスマホアプリから構成されています。<br>
-            既存の見守りサービスと異なり、複数端末から得られる情報を学区や自治体規模で共有することができます。
-            位置情報をもとに帰宅通知や緊急通知を保護者向けスマホアプリに送る基本機能に加え、複数端末の情報から帰宅経路の統計や登下校人数などの把握をすることが可能です。
-          </p>
-          <a class="url" href="https://youtu.be/kxLct4XnflM" target="_blank"><i class="fa fa-youtube-play fa"></i> 紹介動画</a> <br>
-          <div class="skills">
-            <span class="badge language">C++</span>
-            <span class="badge skill">Spresense</span>
-            <span class="badge language">TypeScript</span>
-            <span class="badge frame">React</span>
-            <span class="badge frame">React Native</span>
-            <span class="badge language">Python</span>
-          </div>
-          <span></span>
+    <div class="main_inner">
+      <div class="content">
+        <div class="news">
+          <h2>
+            What's new
+            <p>お知らせ</p>
+          </h2>
         </div>
       </div>
-      
-    </div>
-  </div>
 
-  <div class="content" id="links">
-    <h2 class="title">
-      Links
-      <p>関連リンク</p>
-    </h2>
-    <div class="links">
-      <a class="github" href="https://github.com/SeiTaross" target="_blank"><i class="fa fa-github fa-5x"></i></a>
-      <!--
-      <a href="https://atcoder.jp/users/seitaross" target="_blank"><img src="https://img.atcoder.jp/assets/top/img/logo_bk.svg" alt=""></a>
-      -->
-    </div>
-  </div>
+      <div class="content" id="about">
+        <h2 class="title">
+          About
+          <p>自己紹介</p>
+        </h2>
+        <div class="profile">
+          <img src="./pictures/pic_me.JPG" class="profile_picture">
+          <div class="textBox">
+            <h4>プロフィール</h4>
+            <p>
+              名前：　稲垣正太郎（いながきせいたろう）<br>
+              生年月日：　1999/5/7 <br>
+              出身：　愛知県岡崎市 <br>
+              趣味：　ゲーム・音楽・運動・アウトドア <br>
+            </p>
+          </div>
+          <div class="textBox">
+            <h4>学歴</h4>
+            <p>
+              2018年3月　刈谷高等学校　卒業 <br>
+              2022年3月　名古屋工業大学　工学部　情報工学科　ネットワーク分野　卒業 <br>
+              2024年3月　名古屋工業大学大学院　工学研究科　情報工学専攻　卒業予定 <br>
+            </p>
+          </div>
+          <div class="textBox">
+            <h4>スキル</h4>
+            <div class="skills">
+              <h6>そこそこ使える</h6>
+              <span class="badge language">C++</span>
+              <span class="badge skill">Spresense</span>
+              <span class="badge language">Python</span>
+              <span class="badge frame">Unity</span>
+              <span class="badge language">C#</span>
+              <span class="badge language">HTML</span>
+              <span class="badge language">CSS</span>
+              <span class="badge skill">Git</span>
+              <h6>触ったことがある</h6>
+              <span class="badge language">C</span>
+              <span class="badge skill">GCP</span>
+              <span class="badge language">JavaScript</span>
+              <span class="badge language">Java</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="content" id="contact">
-    <div class="contact">
-      <h2>Contact</h2>
-      <p>
-        名古屋工業大学　20号館 2階　210 舟橋研究室 <br>
-        s.inagaki.706@stn.nitech.ac.jp
-      </p>
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1372.7032614198451!2d136.92509946443116!3d35.15703663203381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370972daa8831%3A0x4caa5555ce971489!2z44CSNDY2LTAwNjEg5oSb55-l55yM5ZCN5Y-k5bGL5biC5pit5ZKM5Yy65b6h5Zmo5omA55S6IDIw5Y-36aSo!5e0!3m2!1sja!2sjp!4v1673594476502!5m2!1sja!2sjp" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="content" id="study">
+        <h2 class="title">
+          Study
+          <p>研究紹介</p>
+        </h2>
+        <div class="study">
+          <div>
+            <h4>テーマ</h4>
+            <p>『パノラマ360度画像のHMD視聴時における視線方向制御による後方視認の容易化』</p>
+          </div>
+          <div class="textBox">
+            <h4>概要</h4>
+            <p>
+              この研究は座った状態でのHMD使用における後方データの使用率が低く、データの無駄が生じやすい問題に焦点を当てています。
+              これは座った状態において後ろを振り向くためには体全体を使う必要があり、後方視認が億劫であることが根底にあります。
+              そこで、プログラムで視線方向(顔の向いている方向）の角度を変化させることで、首の回旋動作だけで容易に後方が視認できる手法を提案し、その有用性について調査しています。
+            </p>
+          </div>
+          <div>
+            <p>↓卒業研究で作成した実験システムの様子です。</p>
+            <video controls width="300" heigh="200" src="./videos/video.mp4"></video>
+          </div>
+          <h4>実績</h4>
+          <p>
+            2022年6月 <a class="url" href="https://www.art-science.org/nicograph/nicoint2022/" target="_blank">NICOGRAPH
+              International 2022</a> Poster部門<br>
+            "<a class="url" href="https://ieeexplore.ieee.org/document/9848477" target="_blank">Facilitating Rearward
+              Visibility by Controlling Eye Direction in HMD Viewing of Panoramic Images</a>" <br>
+            Seitaro Inagaki, Kenji Funahashi <br>
+            <a class="url" href="https://www.art-science.org/nicograph/nicoint2022/index.html#nicoint2022-award"
+              target="_blank">
+              <span class="badge pickup">BestPosterPresentationAward受賞</span>
+            </a>
+          </p>
+          <p>
+            2022年8月 <a class="url" href="https://s2022.siggraph.org/" target="_blank">SIGGRAPH 2022</a> Poster部門<br>
+            "<a class="url" href="https://dl.acm.org/doi/10.1145/3532719.3543210" target="_blank">Easy rearward
+              visibility
+              by the control of eye direction in viewing panoramic images with HMD</a>" <br>
+            Seitaro Inagaki, Kenji Funahashi <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="content" id="products">
+        <h2 class="title">
+          Products
+          <p>制作物紹介</p>
+        </h2>
+        <div class="products">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                みまもセル
+                <p>〜ランドセル取り付け型地域安全見守りサービス〜</p>
+              </h5>
+              <div class="textBox">
+                <p class="card-text">
+                  Sony主催のSensingSolutionハッカソン2022で作成した子供見守りサービスです。
+                  ランドセル取り付け型IoTデバイス、管理者用Webアプリ、保護者向けスマホアプリから構成されています。<br>
+                  既存の見守りサービスと異なり、複数端末から得られる情報を学区や自治体規模で共有することができます。
+                  位置情報をもとに帰宅通知や緊急通知を保護者向けスマホアプリに送る基本機能に加え、複数端末の情報から帰宅経路の統計や登下校人数などの把握をすることが可能です。
+                </p>
+              </div>
+              <a class="url" href="https://youtu.be/kxLct4XnflM" target="_blank"><i class="fa fa-youtube-play fa"></i>
+                紹介動画</a> <br>
+              <div class="skills">
+                <span class="badge language">C++</span>
+                <span class="badge skill">Spresense</span>
+                <span class="badge language">TypeScript</span>
+                <span class="badge frame">React</span>
+                <span class="badge frame">React Native</span>
+                <span class="badge language">Python</span>
+              </div>
+              <span></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content" id="links">
+        <h2 class="title">
+          Links
+          <p>関連リンク</p>
+        </h2>
+        <div class="links">
+          <a class="github" href="https://github.com/SeiTaross" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+          <!--
+          <a href="https://atcoder.jp/users/seitaross" target="_blank"><img src="https://img.atcoder.jp/assets/top/img/logo_bk.svg" alt=""></a>
+          -->
+        </div>
+      </div>
+
+      <div class="content" id="contact">
+        <div class="contact">
+          <h2>Contact</h2>
+          <p>
+            名古屋工業大学　20号館 2階　210 舟橋研究室 <br>
+            s.inagaki.706@stn.nitech.ac.jp
+          </p>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1372.7032614198451!2d136.92509946443116!3d35.15703663203381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370972daa8831%3A0x4caa5555ce971489!2z44CSNDY2LTAwNjEg5oSb55-l55yM5ZCN5Y-k5bGL5biC5pit5ZKM5Yy65b6h5Zmo5omA55S6IDIw5Y-36aSo!5e0!3m2!1sja!2sjp!4v1673594476502!5m2!1sja!2sjp"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <footer>
     <div class="footer">
